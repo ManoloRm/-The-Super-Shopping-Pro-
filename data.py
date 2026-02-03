@@ -1,3 +1,3 @@
 URL = "https://sauce-demo.myshopify.com"
-Email = "<EMAIL>"
+Email = "email@email.com"
 Password = "<PASSWORD>"
