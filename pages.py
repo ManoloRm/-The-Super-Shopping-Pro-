@@ -14,3 +14,5 @@ class login:
         return self.driver.find_element(By.ID, "customer_email")
     def passwordBox(self):
         return self.driver.find_element(By.ID, "customer_password")
+    def login(self):
+        return self.driver.find_element(By.ID, "customer_login_link")

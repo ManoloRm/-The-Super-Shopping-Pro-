@@ -7,4 +7,11 @@ import pages
 import data
 
 class Test_The_Super_Shopping_Pro ():
-    driver = webdriver.Chrome()
+    driver=webdriver.Chrome()
+    driver.get(data.URL)
+
+    def login(self):
+        pages.login.login(self).click()
+        pages.login.emailBox().send_keys("<EMAIL>")
+        pages.login.passwordBox().send_keys("<PASSWORD>")
+        assert pages.login.emailBox().get_attribute("value") == "<EMAIL>"
