@@ -18,5 +18,5 @@ class login:
         return self.driver.find_element(By.ID, "customer_password").send_keys(setPass)
     def login_page(self):
         return self.driver.find_element(By.XPATH, '//*[@id="customer_login_link"]')
-    def signin_botton(self):
-        return self.driver.find_element(by.XPATH, '//*[@id="customer_login"]/div[5]/input')
+    def signin_button(self):
+        return self.driver.find_element(By.CSS_SELECTOR, '#customer_login > div.action_bottom > input')

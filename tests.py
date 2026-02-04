@@ -15,5 +15,5 @@ class Test_The_Super_Shopping_Pro ():
         pages.login.login_page(self).click()
         pages.login.emailBox(self,test_email)
         pages.login.passwordBox(self,test_pass)
-        pages.login.signin_botton(self).click()
+        pages.login.signin_button(self).click()
         assert pages.login.emailBox().get_attribute("value") == "<EMAIL>"
