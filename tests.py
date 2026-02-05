@@ -19,5 +19,6 @@ class Test_The_Super_Shopping_Pro ():
         pages.login.passwordBox(self,test_pass)
         time.sleep(5)
         pages.login.signin_button(self).click()
-
-
+        self.driver.quit()
+    def Test_logout(self):
+        self.driver.quit()
