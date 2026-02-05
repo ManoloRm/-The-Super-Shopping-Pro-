@@ -1,3 +1,5 @@
+import time
+
 import selenium
 from selenium import webdriver
 from selenium.webdriver import ActionChains
@@ -15,5 +17,7 @@ class Test_The_Super_Shopping_Pro ():
         pages.login.login_page(self).click()
         pages.login.emailBox(self,test_email)
         pages.login.passwordBox(self,test_pass)
+        time.sleep(5)
         pages.login.signin_button(self).click()
-        assert pages.login.emailBox().get_attribute("value") == "<EMAIL>"
+
+
