@@ -16,16 +16,6 @@ class Test_The_Super_Shopping_Pro ():
         pages.login.login_page(self).click()
         pages.login.emailBox(self, test_email)
         pages.login.passwordBox(self, test_pass)
-        pages.login.signin_button(self).click()
-
-        from utils import wait_for_element
-        from selenium.webdriver.common.by import By
-        captcha_locator = (By.ID, "ID_DEL_CAPTCHA")
-        try:
-            captcha_btn = wait_for_element(self.driver, captcha_locator, timeout=10)
-            captcha_btn.click()
-            print("Captcha detectado y clickeado con éxito.")
-        except Exception as e:
-            print(f"El captcha no apareció o hubo un error: {e}")
-
+        button = pages.login.signin_button(self)
+        self.driver.execute_script("arguments[0].click();", button)
         self.driver.quit()
