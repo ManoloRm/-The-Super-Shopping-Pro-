@@ -32,3 +32,5 @@ class Test_The_Super_Shopping_Pro ():
             print(f"❌ El captcha no apareció o el selector falló: {e}")
             self.driver.switch_to.default_content()  # Aseguramos salir del frame pase lo que pase
         self.driver.quit()
+
+    def Test_logOut(self):

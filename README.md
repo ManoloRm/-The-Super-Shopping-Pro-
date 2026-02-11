@@ -11,7 +11,7 @@ Se automatizaron los flujos críticos de la aplicación, incluyendo:
 
 ## 🛠️ Stack Tecnológico
 * **Herramienta Core:** [Playwright / Cypress / Selenium - *Elige uno*]
-* **Lenguaje:** [JavaScript / TypeScript / Python]
+* **Lenguaje:** [Python]
 * **Patrón de Diseño:** **Page Object Model (POM)** para mejorar la legibilidad y el mantenimiento.
 * **Reportes:** Integración con [Allure Reports / Reporte Nativo].
 
