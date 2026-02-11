@@ -10,7 +10,7 @@ Se automatizaron los flujos críticos de la aplicación, incluyendo:
 * **Validación de Datos:** Verificación de cálculos de impuestos y montos totales en el checkout mediante lógica programática.
 
 ## 🛠️ Stack Tecnológico
-* **Herramienta Core:** [Playwright / Cypress / Selenium - *Elige uno*]
+* **Herramienta Core:** [Playwright / Cypress / Selenium - *Elige uno*] 
 * **Lenguaje:** [Python]
 * **Patrón de Diseño:** **Page Object Model (POM)** para mejorar la legibilidad y el mantenimiento.
 * **Reportes:** Integración con [Allure Reports / Reporte Nativo].
