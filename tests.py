@@ -33,4 +33,7 @@ class Test_The_Super_Shopping_Pro ():
             self.driver.switch_to.default_content()  # Aseguramos salir del frame pase lo que pase
         self.driver.quit()
 
-    def Test_logOut(self):
+    def test_logout(self):
+        test_email = data.Email
+        test_pass = data.Password
+        pages.signin.signup_page(self).click()

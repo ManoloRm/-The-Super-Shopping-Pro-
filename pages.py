@@ -24,3 +24,10 @@ class login:
         return self.driver.find_element(By.XPATH, '//*[@id="customer_login_link"]')
     def signin_button(self):
         return self.driver.find_element(By.CSS_SELECTOR, '#customer_login > div.action_bottom > input')
+class signin:
+    def __init__(self):
+        self.driver = webdriver.Chrome()
+        self.driver.maximize_window()
+        self.driver.get(data.URL)
+    def signup_page(self):
+        return self.driver.find_element(By.CSS_SELECTOR, '#customer_register_link')
