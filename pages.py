@@ -31,3 +31,7 @@ class signin:
         self.driver.get(data.URL)
     def signup_page(self):
         return self.driver.find_element(By.CSS_SELECTOR, '#customer_register_link')
+    def nameBox(self, setName):
+        element = self.driver.find_element(By.CSS_SELECTOR, '#first_name')
+        element.send_keys(setName)
+        return element

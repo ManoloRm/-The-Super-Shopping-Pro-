@@ -17,6 +17,9 @@ def generate_random_email(domain="test.com"):
 def geneate_random_password():
     return ''.join(random.choices(string.ascii_lowercase + string.digits, k=8))
 
+def generate_random_name ():
+    return ''.join(random.choices(string.ascii_lowercase + string.digits, k=8))
+
 def switch_to_iframe(driver, locator, timeout=10):
 
     from selenium.webdriver.support.ui import WebDriverWait

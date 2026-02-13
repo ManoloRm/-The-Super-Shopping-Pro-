@@ -36,4 +36,6 @@ class Test_The_Super_Shopping_Pro ():
     def test_logout(self):
         test_email = data.Email
         test_pass = data.Password
+        test_name = data.Fist_name
         pages.signin.signup_page(self).click()
+        pages.signin.nameBox(self, test_name)
