@@ -30,12 +30,12 @@ class Test_The_Super_Shopping_Pro ():
 
         except Exception as e:
             print(f"❌ El captcha no apareció o el selector falló: {e}")
-            self.driver.switch_to.default_content()  # Aseguramos salir del frame pase lo que pase
+            self.driver.switch_to.default_content()
         self.driver.quit()
 
     def test_logout(self):
         test_email = data.Email
         test_pass = data.Password
-        test_name = data.Fist_name
+        test_name = data.First_name
         pages.signin.signup_page(self).click()
         pages.signin.nameBox(self, test_name)
