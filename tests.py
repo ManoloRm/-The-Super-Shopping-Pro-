@@ -39,3 +39,4 @@ class Test_The_Super_Shopping_Pro ():
         test_name = data.First_name
         pages.signin.signup_page(self).click()
         pages.signin.nameBox(self, test_name)
+        assert()
