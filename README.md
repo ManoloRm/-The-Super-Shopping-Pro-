@@ -7,7 +7,6 @@ Este proyecto es un framework de automatización de pruebas de extremo a extremo
 Se automatizaron los flujos críticos de la aplicación, incluyendo:
 * **Autenticación:** Pruebas de login exitoso, logout y manejo de usuarios bloqueados.
 * **Flujo de Compra:** Selección dinámica de productos, gestión del carrito y validación de badges.
-* **Validación de Datos:** Verificación de cálculos de impuestos y montos totales en el checkout mediante lógica programática.
 
 ## 🛠️ Stack Tecnológico
 * **Herramienta Core:** [Playwright / Cypress / Selenium - *Elige uno*] 
